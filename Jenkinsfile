@@ -4,13 +4,14 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Build app'
+        npm run build:prod
+        npm run test:ci
       }
     }
 
     stage('Deploy') {
       steps {
-        echo 'Deploy app'
+        npm run deploy
       }
     }
   }

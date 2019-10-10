@@ -5,7 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --prod",
     "test": "ng test",
+    "text:ci": "ng test --no-watch",
+    "deploy": "ng run jenkins-sample-angular",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },

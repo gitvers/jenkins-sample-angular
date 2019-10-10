@@ -1,0 +1,17 @@
+{
+  "hosting": [
+    {
+      "app": {
+        "project": "jenkins-sample-angular",
+        "target": "build",
+        "configuration": "production",
+        "path": "dist/jenkins-sample-angular"
+      },
+      "azureHosting": {
+        "subscription": "f084280e-26f7-4b47-83db-34f993867827",
+        "resourceGroupName": "jenkins-sample-angular-static-deploy",
+        "account": "jenkinssampleangulstatic"
+      }
+    }
+  ]
+}

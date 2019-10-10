@@ -4,14 +4,14 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        npm run build:prod
-        npm run test:ci
+        sh "npm run build:prod"
+        sh "npm run test:ci"
       }
     }
 
     stage('Deploy') {
       steps {
-        npm run deploy
+        sh "npm run deploy"
       }
     }
   }
